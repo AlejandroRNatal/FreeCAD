@@ -89,7 +89,7 @@ def setStatusIcons(show=True):
     def toggleContextMenu(point):
         # DISABLED - TODO need to find a way to add a context menu to a QAction...
         FreeCADGui.BimToggleMenu = QtGui.QMenu()
-        for t in ["Report view", "Python console", "Selection view", "Combo View"]:
+        for t in ["Report View", "Python Console", "Selection View", "Combo View"]:
             a = QtGui.QAction(t)
             # a.setCheckable(True)
             # a.setChecked(FreeCAD.ParamGet("User parameter:BaseApp/Preferences/Mod/BIM").GetBool("toggle"+t.replace(" ",""),True))
@@ -123,7 +123,7 @@ def setStatusIcons(show=True):
                 statuswidget.setObjectName("BIMStatusWidget")
                 text = translate(
                     "BIMStatusWidget",
-                    "BIM status widget",
+                    "BIM Status Widget",
                     "A context menu action used to show or hide this toolbar widget",
                 )
                 statuswidget.setWindowTitle(text)
@@ -138,9 +138,9 @@ def setStatusIcons(show=True):
                 togglemenu = QtGui.QMenu()
                 for t in [
                     "Toggle",
-                    "Report view",
-                    "Python console",
-                    "Selection view",
+                    "Report View",
+                    "Python Console",
+                    "Selection View",
                     "Combo View",
                 ]:
                     a = QtGui.QAction(t)
@@ -148,9 +148,9 @@ def setStatusIcons(show=True):
                 togglemenu.triggered.connect(toggleSaveSettings)
                 togglebutton.setIcon(QtGui.QIcon(":/icons/BIM_TogglePanels.svg"))
                 togglebutton.setText("")
-                togglebutton.setToolTip(translate("BIM", "Toggle report panels on/off (Ctrl+0)"))
+                togglebutton.setToolTip(translate("BIM", "Toggle Report Panels On/Off (Ctrl+0)"))
                 togglebutton.setCheckable(True)
-                rv = mw.findChild(QtGui.QWidget, "Python console")
+                rv = mw.findChild(QtGui.QWidget, "Python Console")
                 if rv and rv.isVisible():
                     togglebutton.setChecked(True)
                 statuswidget.togglebutton = togglebutton
@@ -166,7 +166,7 @@ def setStatusIcons(show=True):
 
                 bimviewsbutton.setText("")
                 bimviewsbutton.setToolTip(
-                    translate("BIM", "Toggle BIM views panel on/off (Ctrl+9)")
+                    translate("BIM", "Toggle BIM Views Panel On/Off (Ctrl+9)")
                 )
                 bimviewsbutton.setCheckable(True)
                 if BimViews.findWidget():
@@ -182,7 +182,7 @@ def setStatusIcons(show=True):
                 bgbutton.setIcon(QtGui.QIcon(":/icons/BIM_Background.svg"))
                 bgbutton.setText("")
                 bgbutton.setToolTip(
-                    translate("BIM", "Toggle 3D view background between simple and gradient")
+                    translate("BIM", "Toggle 3D View background between simple and gradient")
                 )
                 statuswidget.bgbutton = bgbutton
                 bgbutton.triggered.connect(toggleBackground)

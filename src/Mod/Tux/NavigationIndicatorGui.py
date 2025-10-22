@@ -1,4 +1,4 @@
-# Navigation indicator for FreeCAD
+# Navigation Indicator for FreeCAD
 # Copyright (C) 2016, 2017, 2018 triplus @ FreeCAD
 #
 #
@@ -16,7 +16,7 @@
 # License along with this library; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301 USA
 
-"""Navigation indicator for FreeCAD."""
+"""Navigation Indicator for FreeCAD."""
 
 import Tux_rc
 import FreeCAD as App
@@ -666,8 +666,8 @@ indicator.adjustSize()
 indicator.setObjectName("NavigationIndicator")
 text = QtGui.QApplication.translate(
     "NavigationIndicator",
-    "Navigation indicator",
-    "A context menu action used to show or hide the 'Navigation indicator' toolbar widget",
+    "Navigation Indicator",
+    "A context menu action used to show or hide the 'Navigation Indicator' toolbar widget",
 )
 indicator.setWindowTitle(text)
 

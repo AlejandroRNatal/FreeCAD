@@ -11589,9 +11589,9 @@ Kontrollera din FreeCAD-installation eller ange en anpassad mall under menyn Ins
     <name>BIMStatusWidget</name>
     <message>
       <location filename="../../BimStatus.py" line="127"/>
-      <source>BIM status widget</source>
+      <source>BIM Status Widget</source>
       <comment>A context menu action used to show or hide this toolbar widget</comment>
-      <translation>Widget för BIM-status</translation>
+      <translation>Widget för BIM-Status</translation>
     </message>
   </context>
   <context>

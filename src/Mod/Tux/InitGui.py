@@ -21,7 +21,7 @@
 p = FreeCAD.ParamGet("User parameter:Tux")
 
 
-# Navigation indicator
+# Navigation Indicator
 if p.GetGroup("NavigationIndicator").GetBool("Enabled", 1):
     import NavigationIndicatorGui
 else:

@@ -6062,13 +6062,13 @@ Save all changes?</source>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="407"/>
-        <source>Input hints</source>
+        <source>Input Hints</source>
         <extracomment>A context menu action used to show or hide the input hints in the status bar</extracomment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="417"/>
-        <source>Quick measure</source>
+        <source>Quick Measure</source>
         <extracomment>A context menu action used to enable or disable quick measure in the status bar</extracomment>
         <translation type="unfinished"></translation>
     </message>
